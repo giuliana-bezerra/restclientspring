@@ -1,4 +1,6 @@
 # restclientspring
+[![Build status](https://travis-ci.org/giuliana-bezerra/restclientspring.svg?branch=master)](https://travis-ci.org/giuliana-bezerra/restclientspring)
+
 
 #### Table of Contents
 
