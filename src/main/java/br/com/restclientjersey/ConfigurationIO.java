@@ -6,7 +6,8 @@ import java.io.InputStream;
 import java.util.Properties;
 
 /**
- * It loads configuration for accessing the service.
+ * It loads configuration for accessing the service. If none is provide, it
+ * assumes default configuration for tests.
  * 
  * @author giuliana.bezerra
  *
