@@ -32,7 +32,7 @@ mvn package
 3. Import the generated jar to a project.
 
 ## Usage
-The client can be used either to GET or POST calls. RestClient can be injected and used for calling services throughout GET and POST HTTP methods. To this end, a request (Request class) and a resource should be passed to this client. The Resource is a class that implements the resource interface.
+The client can be used either to GET or POST calls. RestClient can be injected and used for calling services throughout GET and POST HTTP methods. To this end, a request (Request class) and a resource should be passed to this client. The Resource is a class that implements the resource interface, which represents the resource accessed by the service client.
 
 ## Reference
 See javadoc.
