@@ -15,6 +15,7 @@ public class ConfigurationIO {
 	private Properties properties = new Properties();
 	private InputStream inputStream = null;
 	private static ConfigurationIO singleton;
+	private boolean noAuthorizationFile;
 
 	public static ConfigurationIO getInstance() throws IOException {
 		if (singleton == null)
@@ -27,15 +28,22 @@ public class ConfigurationIO {
 			inputStream = new FileInputStream("/etc/config/restclientspring/authorization.properties");
 			properties.load(inputStream);
 		} catch (IOException e) {
-			throw new IOException("File not found: authorization.properties not found to load service credentials.", e);
+			// It loads default credentials for tests.
+			noAuthorizationFile = true;
 		}
 	}
 
 	public String getUser() {
+		// Default credentials for tests.
+		if (noAuthorizationFile)
+			return "user";
 		return getProperty("user");
 	}
 
 	public String getPassword() {
+		// Default credentials for tests.
+		if (noAuthorizationFile)
+			return "password";
 		return getProperty("password");
 	}
 
