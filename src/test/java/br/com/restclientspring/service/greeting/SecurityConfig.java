@@ -1,4 +1,4 @@
-package br.com.restclientjersey.service.greeting;
+package br.com.restclientspring.service.greeting;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;

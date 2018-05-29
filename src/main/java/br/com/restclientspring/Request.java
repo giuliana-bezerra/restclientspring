@@ -1,4 +1,4 @@
-package br.com.restclientjersey;
+package br.com.restclientspring;
 
 /**
  * This object encapsulates a request to a service.

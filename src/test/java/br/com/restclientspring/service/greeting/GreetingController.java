@@ -1,4 +1,4 @@
-package br.com.restclientjersey.service.greeting;
+package br.com.restclientspring.service.greeting;
 
 import java.util.concurrent.atomic.AtomicLong;
 
@@ -10,15 +10,14 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * Service which returns an object of type {@link Greeting}. It uses basic
- * authentication.
+ * Service which returns an object of type {@link Greeting}.
  * 
  * @author giuliana.bezerra
  *
  */
 @RestController
-@RequestMapping("/auth/greeting")
-public class GreetingBasicAuthController {
+@RequestMapping(value = "/greeting")
+public class GreetingController {
 
 	private static final String template = "Hello, %s!";
 	private final AtomicLong counter = new AtomicLong();
@@ -34,6 +33,6 @@ public class GreetingBasicAuthController {
 	@PostMapping
 	public Greeting add(@RequestBody Greeting greeting) {
 		this.greeting = greeting;
-		return this.greeting;
+		return greeting;
 	}
 }

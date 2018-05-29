@@ -1,4 +1,4 @@
-package br.com.restclientjersey.service.greeting;
+package br.com.restclientspring.service.greeting;
 
 import org.springframework.security.crypto.password.PasswordEncoder;
 

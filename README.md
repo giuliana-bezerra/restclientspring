@@ -1,5 +1,5 @@
 # restclientspring
-[![Build status](https://travis-ci.org/giuliana-bezerra/restclientspring.svg?branch=master)](https://travis-ci.org/giuliana-bezerra/restclientspring)
+[![Build status](https://travis-ci.org/giuliana-bezerra/restclientspring.svg?branch=master)](https://travis-ci.org/giuliana-bezerra/restclientspring) [![Quality Gate](https://sonarcloud.io/api/badges/gate?key=br.com:restclientspring)](https://sonarcloud.io/dashboard/index/br.com:restclientspring)
 
 
 #### Table of Contents

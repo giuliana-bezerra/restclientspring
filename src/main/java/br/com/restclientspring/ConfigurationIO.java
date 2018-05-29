@@ -1,4 +1,4 @@
-package br.com.restclientjersey;
+package br.com.restclientspring;
 
 import java.io.FileInputStream;
 import java.io.IOException;

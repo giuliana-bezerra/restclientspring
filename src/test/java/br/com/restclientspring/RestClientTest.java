@@ -1,4 +1,4 @@
-package br.com.restclientjersey;
+package br.com.restclientspring;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
@@ -15,8 +15,10 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import br.com.restclientjersey.service.greeting.Application;
-import br.com.restclientjersey.service.greeting.Greeting;
+import br.com.restclientspring.Request;
+import br.com.restclientspring.RestClient;
+import br.com.restclientspring.service.greeting.Application;
+import br.com.restclientspring.service.greeting.Greeting;
 
 /**
  * Test class responsible for setting up a service and test the client to it.
